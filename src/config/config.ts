@@ -17,6 +17,13 @@ export class Config {
         return {
             appPort: process.env.APP_PORT,
             env: process.env.ENV,
+
+            dbPort: Number(process.env.DB_PORT),
+            dbHost: process.env.DB_HOST,
+            dbUser: process.env.DB_USER,
+            dbPass: process.env.DB_PASS,
+            dbName: process.env.DB_NAME,
+            dbType: process.env.DB_TYPE
         }
     }
 }

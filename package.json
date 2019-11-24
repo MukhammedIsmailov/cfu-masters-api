@@ -4,13 +4,14 @@
   "scripts": {
     "build": "./node_modules/.bin/tsc",
     "start": "./node_modules/.bin/ts-node src/index.ts"
-  },
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MukhammedIsmailov/cfu-masters-api.git"
   },
   "dependencies": {
     "@koa/cors": "^3.0.0",
+    "@types/bcrypt": "^3.0.0",
     "async-busboy": "^0.7.0",
     "dotenv": "^8.2.0",
     "koa": "^2.11.0",
@@ -20,7 +21,9 @@
     "koa-logger": "^3.2.1",
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
-    "reflect-metadata": "^0.1.13"
+    "pg": "^7.14.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.20"
   },
   "devDependencies": {
     "@types/async-busboy": "^0.7.0",
@@ -33,6 +36,7 @@
     "@types/koa__cors": "^2.2.3",
     "@types/node": "^12.11.7",
     "ts-node": "^8.4.1",
-    "typescript": "^3.6.4"
+    "typescript": "^3.6.4",
+    "tsc-watch": "2.2.1"
   }
 }
